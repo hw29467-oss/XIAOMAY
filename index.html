@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Baju Murah, Baju Kualitas Tinggi, Baju Santai">
     <meta name="description" content="Menjual Baju yang berkualitas tinggi dengan harga terjangkau">
     <meta name="author" content="Latihan WEB Bisnis Digital">
-    <title>XIAOMAY</title>
+    <title>HOME</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
+
 <style>
     nav>a {
-        text-decoration: underline;
+        text-decoration: none;
         color: #000;
-        text-decoration-thickness: 30x;
-        text-underline-offset: 5px;
         padding-right: 20px
+    }
+
+    nav>a:hover{
+        text-decoration-thickness: 30px;
+        text-underline-offset: 5px;
+        text-decoration: underline;
     }
 
     body {
@@ -35,7 +39,13 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 20px
+        gap: 20px;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
     }
 
     main {
@@ -288,9 +298,9 @@
         <h2>XIAOMAY</h2>
 
         <nav>
-            <a href="#">HOME</a>
+            <a href="index.html">HOME</a>
             <a href="#">STORE</a>
-            <a href="#">ABOUT</a>
+            <a href="tampilan2.html">ABOUT</a>
         </nav>
 
     </header>
@@ -429,8 +439,8 @@
                 </div>
             </div>
         </div>
-
     </footer>
+
     <div id="modalpromo">
         <div style="
         background-color: white;

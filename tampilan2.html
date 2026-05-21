@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Baju Murah, Baju Kualitas Tinggi, Baju Santai">
+    <meta name="description" content="Menjual Baju yang berkualitas tinggi dengan harga terjangkau">
+    <meta name="author" content="Latihan WEB Bisnis Digital">
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<style>
+    nav>a {
+        text-decoration: none;
+        color: #000;
+        padding-right: 20px
+    }
+
+    nav>a:hover{
+        text-decoration-thickness: 30px;
+        text-underline-offset: 5px;
+        text-decoration: underline;
+    }
+
+    body {
+        height: 200dhv;
+        width: 100dvw;
+        display: flex;
+        flex-direction: column;
+        margin: 0
+    }
+
+    header {
+        flex: 1;
+        background-color: #fff;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column
+    }
+
+    label {
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 700;
+        padding-right: 40px;
+        color: #6e8568
+    }
+
+    
+
+    .container {
+        max-width: 1170px;
+        margin: auto
+    }
+
+    ul {
+        list-style: none
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .footer {
+        background: linear-gradient(bisque, #c0d4c5);
+        color: #000;
+        padding: 70px 0;
+        border-top-left-radius: 125px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+
+    .footer-col {
+        width: 25%
+    }
+
+    .footer-col h4 {
+        font-size: 18px;
+        color: #000;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        font-weight: 500;
+        position: relative
+    }
+
+    .footer-col h4::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: aliceblue;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px
+    }
+
+    .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px
+    }
+
+    .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #000;
+        font-weight: 300;
+        color: #000;
+        display: block;
+        transform: all 0.2s ease
+    }
+
+    .footer-col ul li a:hover {
+        color: #fff;
+        padding-left: 8px
+    }
+
+    .footer-col .medsos a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgb(255 255 255 / .2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #fff;
+        transition: all 0.1s ease
+    }
+
+    .footer-col .medsos a:hover {
+        color: #000;
+        background-color: #fff
+    }
+</style>
+
+<body>
+    <header>
+        <img src="XM.webp" alt="Logo XIAOMAY" width="100px">
+        <h2>XIAOMAY</h2>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="#">STORE</a>
+            <a href="tampilan2.html">ABOUT</a>
+        </nav>
+    </header>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online Shop</h4>
+                    <ul>
+                        <li><a href="#">T-Shirt</a></li>
+                        <li><a href="#">Hoodie</a></li>
+                        <li><a href="#">Style</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="medsos">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
