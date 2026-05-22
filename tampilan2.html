@@ -11,6 +11,14 @@
     <meta name="author" content="Latihan WEB Bisnis Digital">
     <title>ABOUT</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <style>
@@ -52,7 +60,8 @@
 
     main {
         display: flex;
-        flex-direction: column
+        flex-direction: column;
+        margin-top: 120px;
     }
 
     label {
@@ -63,7 +72,104 @@
         color: #6e8568
     }
 
-    
+    .utama{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 50px;
+        margin-top: 40px;
+    }
+
+    .text>h1{
+        font-size: 80px;
+        font-family: 'Poppins', sans-serif;
+        font-style: italic;
+        font-weight: 900;
+    }
+
+    .gambar>img{
+        width: 1100px;
+        height: 650px;
+        object-fit: cover;
+    }
+
+    .deskripsi{
+        width: 60%;
+        margin: 80px auto;
+        font-family:  'Poppins', sans-serif;
+    }
+
+    .deskripsi>h2{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .deskripsi>p{
+        line-height: 30px;
+        color: #444;
+    }
+
+    .histori{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 100px;
+    }
+
+    .gambarhistori>img{
+        width: 900px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .texthistori{
+        font-family:  'Poppins', sans-serif;
+    }
+
+    .texthistori>h2{
+        font-size: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .texthistori>p{
+        line-height: 28px;
+        color: #444;
+        text-align: center;
+    }
+
+    .janji{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 80px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .janji>h2{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .janji>p{
+        line-height: 30px;
+        color: #555;
+    }
+
+    .banner{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .banner>img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
 
     .container {
         max-width: 1170px;
@@ -150,17 +256,76 @@
 </style>
 
 <body>
+
     <header>
         <img src="XM.webp" alt="Logo XIAOMAY" width="100px">
         <h2>XIAOMAY</h2>
 
         <nav>
             <a href="index.html">HOME</a>
-            <a href="#">STORE</a>
+            <a href="tampilan3.html">STORE</a>
             <a href="tampilan2.html">ABOUT</a>
         </nav>
     </header>
 
+    <main>
+        <section class="utama">
+        <div class="text">
+            <h1>ABOUT US</h1>
+        </div>
+
+        <div class="gambar">
+            <img src="golf.webp" alt="gambar">
+        </div>
+    </section>
+    <section class="deskripsi">
+        <h2>XIOMAY</h2>
+
+        <p>
+            XIAOMAY hadir sebagai brand fashion modern yang menghadirkan
+            pakaian stylish, nyaman, dan berkualitas tinggi untuk anak muda.
+            Kami percaya bahwa fashion bukan hanya tentang penampilan,
+            tetapi juga tentang rasa percaya diri dan kenyamanan.
+        </p>
+    </section>
+    <section class="histori">
+        <div class="gambarhistori">
+             <img src="fashionabout.webp" alt="model">
+        </div>
+
+        <div class="texthistori">
+            <h2>HISTORY OF THE BRAND</h2>
+
+            <p>
+                XIAOMAY didirikan dengan tujuan menghadirkan pakaian premium
+                dengan desain minimalis modern yang cocok digunakan sehari-hari.
+                Kami selalu mengutamakan kualitas bahan serta desain yang elegan.
+            </p>
+
+            <P>
+                Hingga saat ini, XIAOMAY terus berkembang sebagai fashion brand
+                yang mengutamakan kenyamanan, gaya, dan kualitas terbaik.
+            </P>
+        </div>
+    </section>
+
+    <section class="janji">
+
+        <h2>OUR PROMISE</h2>
+
+        <p>
+            Kami selalu berkomitmen memberikan produk terbaik dengan kualitas
+            premium, desain modern, dan harga yang tetap terjangkau untuk semua.
+        </p>
+
+    </section>
+
+    <section class="banner">
+        <img src="kota.webp" alt="banner">
+    </section>
+
+    </main>
+    
     <footer class="footer">
         <div class="container">
             <div class="row">
