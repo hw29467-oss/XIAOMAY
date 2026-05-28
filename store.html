@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STORE</title>
-
+    <meta name="keywords" content="Baju Murah, Baju Kualitas Tinggi, Baju Santai">
+    <meta name="description" content="Menjual Baju yang berkualitas tinggi dengan harga terjangkau">
+    <meta name="author" content="Latihan WEB Bisnis Digital">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>STORE</title>
 </head>
 <style>
-
     body {
         height: 200dhv;
         width: 100dvw;
@@ -30,13 +33,9 @@
         flex-direction: row;
         align-items: center;
         gap: 20px;
-        font-family: 'Poppins', sans-serif;
 
-        position: fixed;
+        position: sticky;
         top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
     }
 
     nav>a {
@@ -45,38 +44,41 @@
         padding-right: 20px
     }
 
-    nav>a:hover{
+    nav>a:hover {
         text-decoration-thickness: 30px;
         text-underline-offset: 5px;
         text-decoration: underline;
     }
 
-    main{
+    main {
         display: flex;
         flex-direction: column;
     }
 
 
-    .underhead{
+    .underhead {
         flex: 1;
         display: flex;
         flex-direction: row;
         gap: 20px;
         justify-content: center;
+        padding-top: 40px;
+        position: sticky;
+        top: 0;
     }
 
-    .underhead>a{
+    .underhead>a {
         text-decoration: none;
         color: black;
         font-size: 25px;
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
-    .underhead>a:hover{
+    .underhead>a:hover {
         text-decoration: underline 2px solid;
     }
 
-    .kop{
+    .kop {
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 15px;
         display: flex;
@@ -84,39 +86,144 @@
         justify-content: center;
     }
 
-    .catalog{
-        flex: 3;
-        flex-direction: row;
+    .catalog {
         display: flex;
-        justify-content: center;
+        gap: 20px;
+
+        overflow-x: auto;
+        scroll-behavior: smooth;
+
+        padding: 20px;
     }
 
-    .catalog>.first{
+    .catalog::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .catalog::-webkit-scrollbar-thumb {
+        background: black;
+        border-radius: 10px;
+    }
+
+    .produk {
+        min-width: 300px;
+        flex-shrink: 0;
+    }
+
+    .produk img {
+        width: 100%;
+    }
+
+    .catalog>.produk {
         flex: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .catalog>.second{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .catalog>.third{
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .catalog>.first>.harga{
+    .catalog>.produk>.price>.harga {
         color: red;
         text-decoration: line-through;
+        flex-direction: row;
     }
 
+    .catalog>.produk>.price {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .produk img {
+        transition: 0.4s ease;
+        cursor: pointer;
+    }
+
+    .produk img:hover {
+        transform: scale(1.05);
+    }
+
+    .container {
+        max-width: 1170px;
+        margin: auto
+    }
+
+    ul {
+        list-style: none
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .footer {
+        background: linear-gradient(bisque, #c0d4c5);
+        color: #000;
+        padding: 70px 0;
+        border-top-left-radius: 125px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+
+    .footer-col {
+        width: 25%
+    }
+
+    .footer-col h4 {
+        font-size: 18px;
+        color: #000;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        font-weight: 500;
+        position: relative
+    }
+
+    .footer-col h4::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #d6c7b0;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px
+    }
+
+    .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px
+    }
+
+    .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #000;
+        font-weight: 300;
+        color: #000;
+        display: block;
+        transform: all 0.2s ease
+    }
+
+    .footer-col ul li a:hover {
+        color: #fff;
+        padding-left: 8px
+    }
+
+    .footer-col .medsos a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgb(255 255 255 / .2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #fff;
+        transition: all 0.1s ease
+    }
+
+    .footer-col .medsos a:hover {
+        color: #000;
+        background-color: #fff
+    }
 </style>
 
 <body>
@@ -124,43 +231,152 @@
         <img src="XM.webp" alt="Logo XIAOMAY" width="100px">
         <h2>XIAOMAY</h2>
         <nav>
-            <a href="home.html">HOME</a>
-            <a href="store.html">STORE</a>
-            <a href="about.html">ABOUT</a>
+            <a href="index.html">HOME</a>
+            <a href="tampilan3.html">STORE</a>
+            <a href="tampilan2.html">ABOUT</a>
         </nav>
+
     </header>
 
     <main>
-            <section class="underhead">
-                <a href="#">MAN</a>
-                <a href="#">WOMAN</a>
-                <a href="#">KIDS</a>
-            </section>
+        <section class="underhead">
+            <a href="#">MAN</a>
+            <a href="#">WOMAN</a>
+            <a href="#">KIDS</a>
+        </section>
 
-            <section class="kop">
-                <p>Booster Outfit is here, Shop Now.</p>
-            </section>
-        
-            <section class="catalog">
-                <section class="first">
-                    <img src="Store1.webp" alt="Kaos Pertama" width="400px">
-                    <p>T-Shirt Vintage BoutBoss Shrap Life</p>
-                    <p class="harga">Rp 300.000,-</p>
-                </section>
+        <section class="kop">
+            <p>Booster Outfit is here, Shop Now.</p>
+        </section>
 
-                <section class="second">
-                    <img src="Store1.webp" alt="Kaos Kedua" width="400px">
-                    <p>T-Shirt Vintage BoutBoss Shrap Life</p>
-                    <p>Rp 135.000,-</p>
-                </section>
-
-                <section class="third">
-                    <img src="Store1.webp" alt="Kaos Ketiga" width="400px">
-                    <p>T-Shirt Vintage BoutBoss Shrap Life</p>
-                    <p>Rp 120.000,-</p>
+        <section class="catalog">
+            <section class="produk">
+                <img src="Pria1.webp" alt="Kaos Pertama" width="200px">
+                <p>T-Shirt Tee Grafis Archive Africa 94</p>
+                <section class="price">
+                    <p class="harga">Rp 500.000,-</p>
+                    <p>Rp 249.000,-</p>
                 </section>
             </section>
+
+            <section class="produk">
+                <img src="Pria2.webp" alt="Kaos Kedua" width="400px">
+                <p>T-Shirt Grafis Piala Dunia FIFA 26</p>
+                <section class="price">
+                    <p class="harga">Rp 599.000,-</p>
+                    <p>Rp 399.000,-</p>
+                </section>
+            </section>
+
+            <section class="produk">
+                <img src="Pria3.webp" alt="Kaos Ketiga" width="400px">
+                <p>T-Shirt GFX</p>
+                <section class="price">
+                    <p class="harga">Rp 489.000,-</p>
+                    <p>Rp 199.000,-</p>
+                </section>
+            </section>
+            <section class="produk">
+                <img src="Pria4.webp" alt="Kaos Keempat" width="400px">
+                <p>T-Shirt Grafis 70S Floral</p>
+                <section class="price">
+                    <p class="harga">Rp 489.000,-</p>
+                    <p>Rp 399.000,-</p>
+                </section>
+            </section>
+            <section class="produk">
+                <img src="Pria5.webp" alt="Kaos Kelima" width="400px">
+                <p>T-Shirt Grafis Strip Cafe</p>
+                <section class="price">
+                    <p class="harga">Rp 489.000,-</p>
+                    <p>Rp 289.000,-</p>
+                </section>
+            </section>
+            <section class="produk">
+                <img src="Wanita1.webp" alt="Kaos Ke-enam" width="400px">
+                <p>T-Shirt ClimaCool Traning Graphic White</p>
+                <section class="price">
+                    <p class="harga">Rp 550.000,-</p>
+                    <p>Rp 299.999,-</p>
+                </section>
+            </section>
+            <section class="produk">
+                <img src="Wanita2.webp" alt="Kaos Ke-tujuh" width="400px">
+                <p>T-Shirt Grafis XPLORIC Polygiene</p>
+                <section class="price">
+                    <p class="harga">Rp 500.000,-</p>
+                    <p>Rp 330.000,-</p>
+                </section>
+            </section>
+            <section class="produk">
+                <img src="Wanita3.webp" alt="Kaos Ke-delapan" width="400px">
+                <p>T-Shirt ClimaCool Traning Graphic Black</p>
+                <section class="price">
+                    <p class="harga">Rp 550.000,-</p>
+                    <p>Rp 299.999,-</p>
+                </section>
+            </section>
+            <section class="produk">
+                <img src="Wanita4.webp" alt="Kaos Ke-sembilan" width="400px">
+                <p>T-Shirt Grafis Cat Patch Crop</p>
+                <section class="price">
+                    <p class="harga">Rp 420.000,-</p>
+                    <p>Rp 289.000,-</p>
+                </section>
+            </section>
+            <section class="produk">
+                <img src="Wanita5.webp" alt="Kaos Ketiga" width="400px">
+                <p>Polo Shirt Grafis POP Art Q2</p>
+                <section class="price">
+                    <p class="harga">Rp 600.000,-</p>
+                    <p>Rp 499.999,-</p>
+                </section>
+            </section>
+
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online Shop</h4>
+                    <ul>
+                        <li><a href="#">T-Shirt</a></li>
+                        <li><a href="#">Hoodie</a></li>
+                        <li><a href="#">Style</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="medsos">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
