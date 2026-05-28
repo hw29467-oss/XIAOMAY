@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +9,36 @@
     <meta name="keywords" content="Baju Murah, Baju Kualitas Tinggi, Baju Santai">
     <meta name="description" content="Menjual Baju yang berkualitas tinggi dengan harga terjangkau">
     <meta name="author" content="Latihan WEB Bisnis Digital">
+    <title>ABOUT</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title>Contact Us</title>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <Style>
-     nav>a {
-        text-decoration: underline;
+
+</head>
+
+<style>
+    nav>a {
+        text-decoration: none;
         color: #000;
-        text-decoration-thickness: 30x;
-        text-underline-offset: 5px;
         padding-right: 20px
     }
 
+    nav>a:hover{
+        text-decoration-thickness: 30px;
+        text-underline-offset: 5px;
+        text-decoration: underline;
+    }
+
     body {
-        min-height: 100vh;
+        height: 200dhv;
+        width: 100dvw;
         display: flex;
         flex-direction: column;
-        margin: 0;
+        margin: 0
     }
 
     header {
@@ -49,12 +59,9 @@
     }
 
     main {
-        flex: 1;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
         margin-top: 120px;
-        margin-bottom: 50px;
     }
 
     label {
@@ -65,8 +72,104 @@
         color: #6e8568
     }
 
-    hjjgjgjhgh
+    .utama{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 50px;
+        margin-top: 40px;
+    }
 
+    .text>h1{
+        font-size: 80px;
+        font-family: 'Poppins', sans-serif;
+        font-style: italic;
+        font-weight: 900;
+    }
+
+    .gambar>img{
+        width: 1100px;
+        height: 650px;
+        object-fit: cover;
+    }
+
+    .deskripsi{
+        width: 60%;
+        margin: 80px auto;
+        font-family:  'Poppins', sans-serif;
+    }
+
+    .deskripsi>h2{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .deskripsi>p{
+        line-height: 30px;
+        color: #444;
+    }
+
+    .histori{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 100px;
+    }
+
+    .gambarhistori>img{
+        width: 900px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .texthistori{
+        font-family:  'Poppins', sans-serif;
+    }
+
+    .texthistori>h2{
+        font-size: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .texthistori>p{
+        line-height: 28px;
+        color: #444;
+        text-align: center;
+    }
+
+    .janji{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 80px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .janji>h2{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .janji>p{
+        line-height: 30px;
+        color: #555;
+    }
+
+    .banner{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .banner>img{
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
 
     .container {
         max-width: 1170px;
@@ -150,74 +253,79 @@
         color: #000;
         background-color: #fff
     }
+</style>
 
-    #modalpromo {
-        display: none;
-        position: fixed;
-        z-index: 999;
-        left: 0;
-        top: 0;
-        width: 100dvw;
-        height: 100dvh;
-        background-color: rgb(28 28 28 / .7)
-    }
-    </Style>
-</head>
 <body>
+
     <header>
         <img src="XM.webp" alt="Logo XIAOMAY" width="100px">
         <h2>XIAOMAY</h2>
 
         <nav>
-            <a href="home.html">HOME</a>
-            <a href="store.html">STORE</a>
-            <a href="about.html">ABOUT</a>
+            <a href="/halamankesatu.html/home.html">HOME</a>
+            <a href="/halamankedua.html/store.html">STORE</a>
+            <a href="/halamanketiga.html/about.html">ABOUT</a>
         </nav>
     </header>
-    
-     <main>
-        <div
-        style="
-            border: 2px dashed lightskyblue;
-            padding: 15px;
-            width: fit-content;
-            text-align: center;
-            border-radius: 8px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        "
-    >
-        <p style="margin-bottom: 10px">Salin Kode Promo:</p>
 
-        <div
-            style="
-                background: gainsboro;
-                padding: 10px;
-                display: inline-block;
-                font-weight: bold;
-                border-radius: 4px;
-            "
-            id="kodevoucher"
-        >
-            HARIXIOMAY
+    <main>
+        <section class="utama">
+        <div class="text">
+            <h1>ABOUT US</h1>
         </div>
 
-        <button
-            onclick="copyVoucher(this)"
-            style="
-                margin-left: 10px;
-                padding: 10px;
-                background-color: cornflowerblue;
-                color: white;
-                border: none;
-                cursor: pointer;
-                border-radius: 4px;
-            "
-        >
-            Salin
-        </button>
-    </div>
-    </main>
+        <div class="gambar">
+            <img src="golf.webp" alt="gambar">
+        </div>
+    </section>
+    <section class="deskripsi">
+        <h2>XIOMAY</h2>
 
+        <p>
+            XIAOMAY hadir sebagai brand fashion modern yang menghadirkan
+            pakaian stylish, nyaman, dan berkualitas tinggi untuk anak muda.
+            Kami percaya bahwa fashion bukan hanya tentang penampilan,
+            tetapi juga tentang rasa percaya diri dan kenyamanan.
+        </p>
+    </section>
+    <section class="histori">
+        <div class="gambarhistori">
+             <img src="fashionabout.webp" alt="model">
+        </div>
+
+        <div class="texthistori">
+            <h2>HISTORY OF THE BRAND</h2>
+
+            <p>
+                XIAOMAY didirikan dengan tujuan menghadirkan pakaian premium
+                dengan desain minimalis modern yang cocok digunakan sehari-hari.
+                Kami selalu mengutamakan kualitas bahan serta desain yang elegan.
+            </p>
+
+            <P>
+                Hingga saat ini, XIAOMAY terus berkembang sebagai fashion brand
+                yang mengutamakan kenyamanan, gaya, dan kualitas terbaik.
+            </P>
+        </div>
+    </section>
+
+    <section class="janji">
+
+        <h2>OUR PROMISE</h2>
+
+        <p>
+            Kami selalu berkomitmen memberikan produk terbaik dengan kualitas
+            premium, desain modern, dan harga yang tetap terjangkau untuk semua.
+        </p>
+
+    </section>
+
+    <section class="banner">
+        <img src="kota.webp" alt="banner">
+    </section>
+
+    </main>
+    
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -259,24 +367,59 @@
             </div>
         </div>
     </footer>
-    
+
+    <div
+        id="sticky-promo"
+        style="
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: darkslateblue;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-family: sans-serif;
+            z-index: 1000;
+            transition: 0.5s;
+        "
+    >
+        Gratis Ongkir ke Seluruh Indonesia dengan belanja minimal Rp 100rb!
+        <a href="#" style="color: orange; margin-left: 10px">Cek Produk</a>
+
+        <button
+            onclick="hideBar()"
+            style="
+                background: none;
+                border: none;
+                color: white;
+                margin-left: 20px;
+                cursor: pointer;
+                font-weight: bold;
+            "
+        >
+            X
+        </button>
+    </div>
+
+    <div style="margin-top: 0px"></div>
+
 </body>
+
 <script>
-    function copyVoucher(btnElement) {
-        const voucherCode =
-            document.getElementById("kodevoucher").innerText;
-
-        navigator.clipboard.writeText(voucherCode).then(() => {
-            const originalText = btnElement.innerText;
-
-            btnElement.innerText = "Tersalin!";
-            btnElement.style.background = "green";
-
-            setTimeout(() => {
-                btnElement.innerText = originalText;
-                btnElement.style.background = "cornflowerblue";
-            }, 2000);
-        });
+    function hideBar() {
+        document.getElementById("sticky-promo").style.top = "-60px";
     }
+
+    setInterval(() => {
+        const bar = document.getElementById("sticky-promo");
+
+        bar.style.background = "red";
+
+        setTimeout(() => {
+            bar.style.background = "green";
+        }, 500);
+    }, 5000);
 </script>
+
 </html>
