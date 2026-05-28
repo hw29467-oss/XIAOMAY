@@ -65,8 +65,188 @@
         color: #6e8568
     }
 
-    hjjgjgjhgh
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
+    body{
+      background: #f5f5f5;
+      padding: 40px;
+      color: #111;
+    }
+
+    .contact-section{
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* TITLE */
+    .small-title{
+      color: #e11d48;
+      font-size: 14px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .main-title{
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+
+    .description{
+      width: 60%;
+      color: #666;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    /* CONTAINER */
+    .contact-container{
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    /* FORM */
+    .contact-form{
+      flex: 1;
+      min-width: 350px;
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    .contact-form h2{
+      margin-bottom: 25px;
+      color: #111;
+    }
+
+    .input-box{
+      margin-bottom: 18px;
+    }
+
+    .input-box label{
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .input-box input,
+    .input-box textarea{
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .input-box textarea{
+      height: 120px;
+      resize: none;
+    }
+
+    .btn-submit{
+      width: 100%;
+      padding: 15px;
+      background: #e11d48;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-submit:hover{
+      background: #be123c;
+    }
+
+    /* INFO */
+    .contact-info{
+      flex: 1;
+      min-width: 350px;
+    }
+
+    .contact-info h2{
+      margin-bottom: 20px;
+    }
+
+    .info-item{
+      margin-bottom: 15px;
+      color: #444;
+      font-size: 15px;
+    }
+
+    /* MAP */
+    .map-box{
+      margin-top: 25px;
+      height: 420px;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?q=80&w=1200&auto=format&fit=crop') center/cover;
+    }
+
+    .store-card{
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      width: 260px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .store-card h3{
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    .store-card p{
+      color: #666;
+      margin-bottom: 15px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .store-card button{
+      padding: 10px 15px;
+      border: none;
+      background: #f3f4f6;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .store-card button:hover{
+      background: #e5e7eb;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width: 768px){
+
+      body{
+        padding: 20px;
+      }
+
+      .main-title{
+        font-size: 36px;
+      }
+
+      .description{
+        width: 100%;
+      }
+
+    }
+
+        vnnnvngg
 
     .container {
         max-width: 1170px;
@@ -169,12 +349,114 @@
         <h2>XIAOMAY</h2>
 
         <nav>
-            <a href="/halamankesatu.html/home.html">HOME</a>
-            <a href="/halamankedua.html/store.html">STORE</a>
-            <a href="/halamanketiga.html/about.html">ABOUT</a>
+            <a href="home.html">HOME</a>
+            <a href="store.html">STORE</a>
+            <a href="about.html">ABOUT</a>
         </nav>
     </header>
+
+
+    <section class="contact-section">
+
+        <p class="small-title">XIAOMAY FASHION</p>
     
+        <h1 class="main-title">
+          Contact XIAOMAY
+        </h1>
+    
+        <p class="description">
+          XIAOMAY menyediakan berbagai koleksi baju trendy dan fashionable
+          untuk pria dan wanita. Hubungi kami untuk pemesanan,
+          kerjasama, atau pertanyaan lainnya.
+        </p>
+    
+        <div class="contact-container">
+    
+          <!-- FORM -->
+          <div class="contact-form">
+    
+            <h2>Send Your Message</h2>
+    
+            <form>
+    
+              <div class="input-box">
+                <label>Nama Lengkap</label>
+                <input type="text" placeholder="Masukkan nama anda">
+              </div>
+    
+              <div class="input-box">
+                <label>Email</label>
+                <input type="email" placeholder="Masukkan email anda">
+              </div>
+    
+              <div class="input-box">
+                <label>No. WhatsApp</label>
+                <input type="text" placeholder="08xxxxxxxxxx">
+              </div>
+    
+              <div class="input-box">
+                <label>Pesan</label>
+                <textarea placeholder="Tulis pesan anda"></textarea>
+              </div>
+    
+              <button class="btn-submit">
+                Kirim Pesan
+              </button>
+    
+            </form>
+    
+          </div>
+    
+          <!-- INFO -->
+          <div class="contact-info">
+    
+            <h2>Informasi Toko</h2>
+    
+            <div class="info-item">
+              📞 +62 812 3456 7890
+            </div>
+    
+            <div class="info-item">
+              ✉️ xiaomayfashion@gmail.com
+            </div>
+    
+            <div class="info-item">
+              📍 Pontianak, Indonesia
+            </div>
+    
+            <div class="info-item">
+              🕒 Senin - Sabtu | 09:00 - 20:00
+            </div>
+    
+            <!-- MAP / IMAGE -->
+            <div class="map-box">
+    
+              <div class="store-card">
+    
+                <h3>XIAOMAY Store</h3>
+    
+                <p>
+                  Fashion modern dengan kualitas terbaik
+                  dan harga terjangkau untuk semua kalangan.
+                </p>
+    
+                <button>
+                    Lihat Lokasi →
+                </button>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+      </section>
+    
+    </body>
+    </html>
+
      <main>
         <div
         style="
