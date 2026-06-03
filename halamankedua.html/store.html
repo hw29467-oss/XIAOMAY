@@ -34,10 +34,9 @@
         align-items: center;
         gap: 20px;
         font-family: 'Poppins', sans-serif;
-
         position: sticky;
         top: 0;
-        background-color: white;
+        background-color: #fff
     }
 
     nav>a {
@@ -49,14 +48,13 @@
     nav>a:hover {
         text-decoration-thickness: 30px;
         text-underline-offset: 5px;
-        text-decoration: underline;
+        text-decoration: underline
     }
 
     main {
         display: flex;
-        flex-direction: column;
+        flex-direction: column
     }
-
 
     .underhead {
         flex: 1;
@@ -67,18 +65,18 @@
         padding-top: 40px;
         position: sticky;
         top: 0;
-        background-color: white;
+        background-color: #fff
     }
 
     .underhead>a {
         text-decoration: none;
-        color: black;
+        color: #000;
         font-size: 25px;
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: Georgia, 'Times New Roman', Times, serif
     }
 
     .underhead>a:hover {
-        text-decoration: underline 2px solid;
+        text-decoration: underline 2px solid
     }
 
     .kop {
@@ -86,138 +84,135 @@
         font-size: 15px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: center
     }
 
     .catalog {
         display: flex;
         gap: 20px;
-
         overflow-x: auto;
         scroll-behavior: smooth;
-
-        padding: 20px;
+        padding: 20px
     }
 
     .catalog::-webkit-scrollbar {
-        height: 8px;
+        height: 8px
     }
 
     .catalog::-webkit-scrollbar-thumb {
         background: gray;
-        border-radius: 10px;
+        border-radius: 10px
     }
 
     .produk {
         min-width: 300px;
-        flex-shrink: 0;
+        flex-shrink: 0
     }
 
     .produk img {
-        width: 100%;
+        width: 100%
     }
 
     .catalog>.produk {
         flex: 1;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center
     }
 
     .catalog>.produk>.price>.harga {
         color: red;
         text-decoration: line-through;
-        flex-direction: row;
+        flex-direction: row
     }
 
     .catalog>.produk>.price {
         display: flex;
         flex-direction: row;
-        gap: 20px;
+        gap: 20px
     }
 
     .produk img {
         transition: 0.4s ease;
-        cursor: pointer;
+        cursor: pointer
     }
 
     .produk img:hover {
-        transform: scale(1.05);
+        transform: scale(1.05)
     }
 
-    .middle{
+    .middle {
         display: flex;
-        flex:3;
-        flex-direction: row;
+        flex: 3;
+        flex-direction: row
     }
 
-    .middle>.lakik{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        padding-bottom: 20px;
-    }
-
-    .middle>.cewek{
+    .middle>.lakik {
         display: flex;
         flex-direction: column;
         align-items: center;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        padding-bottom: 20px;
+        padding-bottom: 20px
     }
 
-    .middle>.bocil{
+    .middle>.cewek {
         display: flex;
         flex-direction: column;
         align-items: center;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        padding-bottom: 20px;
+        padding-bottom: 20px
     }
 
+    .middle>.bocil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding-bottom: 20px
+    }
 
-    .middle>.lakik>nav>a{
+    .middle>.lakik>nav>a {
         font-size: 20px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     }
 
-    .middle>.lakik>nav>a:hover{
+    .middle>.lakik>nav>a:hover {
         text-decoration-thickness: 30px;
         text-underline-offset: 5px;
         text-decoration: underline;
-        color: red;
+        color: red
     }
 
-    .middle>.bocil>nav>a{
+    .middle>.bocil>nav>a {
         font-size: 20px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     }
 
-    .middle>.bocil>nav>a:hover{
+    .middle>.bocil>nav>a:hover {
         text-decoration-thickness: 30px;
         text-underline-offset: 5px;
         text-decoration: underline;
-        color: red;
+        color: red
     }
 
-    .middle>.cewek>nav>a{
+    .middle>.cewek>nav>a {
         font-size: 20px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     }
 
-    .middle>.cewek>nav>a:hover{
+    .middle>.cewek>nav>a:hover {
         text-decoration-thickness: 30px;
         text-underline-offset: 5px;
         text-decoration: underline;
-        color: red;
+        color: red
     }
 
-    .midtext{
+    .midtext {
         font-family: 'Courier New', Courier, monospace;
         font-size: 30px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center
     }
 
     .container {
@@ -235,7 +230,7 @@
     }
 
     .footer {
-        background: linear-gradient(rgb(146, 190, 146), #6e8568);
+        background: linear-gradient(#92be92, #6e8568);
         color: #000;
         padding: 70px 0;
         border-top-left-radius: 125px;
@@ -488,7 +483,7 @@
                 <nav><a href="/halamankedua.html/perempuan.html">SHOP NOW</a></nav>
             </section>
         </section>
-        
+
     </main>
 
     <footer class="footer">
@@ -497,10 +492,9 @@
                 <div class="footer-col">
                     <h4>Company</h4>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="/halamanketiga.html/about.html">About Us</a></li>
+                        <li><a href="/halamankeempat.html/contact.html">Our Services</a></li>
+                        <li><a href="/halamankeempat.html/contact.html">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -516,9 +510,9 @@
                 <div class="footer-col">
                     <h4>Online Shop</h4>
                     <ul>
-                        <li><a href="#">T-Shirt</a></li>
-                        <li><a href="#">Hoodie</a></li>
-                        <li><a href="#">Style</a></li>
+                        <li><a href="/halamankedua.html/laki.html">T-Shirt Man</a></li>
+                        <li><a href="/halamankedua.html/perempuan.html">T-Shirt Woman</a></li>
+                        <li><a href="/halamankedua.html/anakkecil.html">T-Shirt Kids</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -533,9 +527,7 @@
         </div>
     </footer>
 
-   <div 
-   id="sticky-promo"
-   style="
+    <div id="sticky-promo" style="
    position: fixed;
    top: 0;
    left: 0;
@@ -547,21 +539,17 @@
    font-family: sans-serif;
    z-index: 1000;
    transition: 0.5s;
-   "
-   >
-   Gratis Ongkir Ke Seluruh Indonesia dengan minimal belanja sebesar Rp500.000,-
-   <button
-   onclick="hidebar()"
-   style="
+   ">
+        Gratis Ongkir Ke Seluruh Indonesia dengan minimal belanja sebesar Rp500.000,-
+        <button onclick="hidebar()" style="
    background-color: none;
    border: none;
    margin-left: 20px;
    cursor: pointer;
    font-weight: bold;
-   "
-   >X</button>
-   </div>
-   <div style="margin-top: 50px;"></div>
+   ">X</button>
+    </div>
+    <div style="margin-top: 50px;"></div>
 
 </body>
 
@@ -575,8 +563,8 @@
         bar.style.background = "red";
         setTimeout(() => {
             bar.style.background = "green";
-        },500);
-    },5000);
+        }, 500);
+    }, 5000);
 </script>
 
 </html>
