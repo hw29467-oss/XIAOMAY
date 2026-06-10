@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Baju Murah, Baju Kualitas Tinggi, Baju Santai">
+    <meta name="description" content="Menjual Baju yang berkualitas tinggi dengan harga terjangkau">
+    <meta name="author" content="Latihan WEB Bisnis Digital">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>TESTIMONI</title>
+</head>
+<style>
+    nav>a {
+        text-decoration: none;
+        color: #000;
+        padding-right: 20px;
+    }
+
+    nav>a:hover {
+        text-decoration-thickness: 30px;
+        text-underline-offset: 5px;
+        text-decoration: underline;
+    }
+
+    body {
+        height: 200dhv;
+        width: 100dvw;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    header {
+        flex: 1;
+        background-color: #fff;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column
+    }
+
+    .container {
+        max-width: 1170px;
+        margin: auto
+    }
+
+    ul {
+        list-style: none
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .footer {
+        background: linear-gradient(rgb(146, 190, 146), #6e8568);
+        color: #000;
+        padding: 70px 0;
+        border-top-left-radius: 125px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    }
+
+    .footer-col {
+        width: 25%
+    }
+
+    .footer-col h4 {
+        font-size: 18px;
+        color: #000;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        font-weight: 500;
+        position: relative
+    }
+
+    .footer-col h4::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #d6c7b0;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px
+    }
+
+    .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px
+    }
+
+    .footer-col ul li a {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #000;
+        font-weight: 300;
+        color: #000;
+        display: block;
+        transform: all 0.2s ease
+    }
+
+    .footer-col ul li a:hover {
+        color: #fff;
+        padding-left: 8px
+    }
+
+    .footer-col .medsos a {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgb(255 255 255 / .2);
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #fff;
+        transition: all 0.1s ease
+    }
+
+    .footer-col .medsos a:hover {
+        color: #000;
+        background-color: #fff
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #f5f5f5;
+    }
+
+    .testimonial {
+        min-height: 100vh;
+        padding: 80px 8%;
+        text-align: center;
+    }
+
+    .sub-title {
+        color: #6e8568;
+        letter-spacing: 3px;
+        font-size: 14px;
+        margin-bottom: 15px;
+        font-weight: bold;
+    }
+
+    .testimonial>h1 {
+        font-size: 55px;
+        margin-bottom: 70px;
+    }
+
+    .testimonial>h1>span {
+        color: #6e8568;
+    }
+
+    .testimonial-container {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background: white;
+        width: 500px;
+        padding: 35px;
+        border-radius: 25px;
+        text-align: left;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+    }
+
+    .stars {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .card>p {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .card>h4 {
+        font-size: 18px;
+    }
+
+    .why {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .why>h1 {
+        font-size: 55px;
+        margin-bottom: 70px;
+        font-family: Arial, sans-serif;
+    }
+
+    .why>h1>span {
+        color: #6e8568;
+        font-family: Arial, sans-serif;
+    }
+
+    .btn-koleksi {
+        display: inline-block;
+        background: white;
+        color: #6e8568;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 20px 60px;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-koleksi:hover {
+        background: #f3f3f3;
+        transform: translateY(-5px);
+    }
+</style>
+
+
+<body>
+    <header>
+        <img src="XM.webp" alt="Logo XIAOMAY" width="100px">
+        <h2>XIAOMAY</h2>
+
+        <nav>
+            <a href="/halamankesatu.html/home.html">HOME</a>
+            <a href="/halamankedua.html/store.html">STORE</a>
+            <a href="/halamanketiga.html/about.html">ABOUT</a>
+            <a href="/halamankeempat.html/contact.html">CONTACT</a>
+            <a href="/halamankelima.html/testi.html">TESTIMONIALS</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="testimonial">
+            <p class="sub-title">TESTIMONI</p>
+            <h1>
+                Rating Kita Dari <span>Pembeli</span>
+            </h1>
+
+            <div class="testimonial-container">
+
+                <div class="card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>
+                        "Bahan Pakaiannya Sangat lembut dan menyerap keringat dengan baik cocok buat anak kecil yang
+                        suka beraktivitas."
+                    </p>
+                    <h4>- Delixon</h4>
+                </div>
+
+                <div class="card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>
+                        "Design Pakaiannya sangat bagus dan tidak ketinggalan zaman."
+                    </p>
+                    <h4>- Monitan</h4>
+                </div>
+
+                <div class="card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>
+                        "Dengan bahan yang berkualitas bagus ini sudah termasuk murah."
+                    </p>
+                    <h4>- Jess No Limit</h4>
+                </div>
+
+                <div class="card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>
+                        "Bahannya Berkualitas tinggi dengan harga terjangkau."
+                    </p>
+                    <h4>- Timoti Donald</h4>
+                </div>
+
+                <div class="card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>
+                        "Bajunya cocok dipakai buat olahraga juga selain untuk keseharian."
+                    </p>
+                    <h4>- Christiano Ronaldo</h4>
+                </div>
+
+                <div class="card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>
+                        "Bajunya sangat bagus hingga susah percaya harganya."
+                    </p>
+                    <h4>- Lionel Messi</h4>
+                </div>
+
+                <div class="card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>
+                        "Saat saya menggunakan bajunya akurasi nembak saya menjadi lebih akurat."
+                    </p>
+                    <h4>- Michael Jordan</h4>
+                </div>
+
+                <div class="card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>
+                        "Sejak saya menggunakan baju ini, saya tidak pernah merasa sedih lagi."
+                    </p>
+                    <h4>- Fajar Sadboy</h4>
+                </div>
+
+                <div class="card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>
+                        "Bajunya sangat memberikan feel bernyanyi."
+                    </p>
+                    <h4>- Adele</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="why">
+            <p class="sub-title">XIAOMAY PRODUCT</p>
+            <h1>
+                Tunggu apalagi buruan beli di <span>toko ini</span>
+            </h1>
+
+            <a href="/halamankedua.html/store.html" class="btn-koleksi">
+                LIHAT PRODUCT
+            </a>
+        </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/halamanketiga.html/about.html">About Us</a></li>
+                        <li><a href="/halamankeempat.html/contact.html">Our Services</a></li>
+                        <li><a href="/halamankeempat.html/contact.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online Shop</h4>
+                    <ul>
+                        <li><a href="/halamankedua.html/laki.html">T-Shirt Man</a></li>
+                        <li><a href="/halamankedua.html/perempuan.html">T-Shirt Woman</a></li>
+                        <li><a href="/halamankedua.html/anakkecil.html">T-Shirt Kids</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="medsos">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
